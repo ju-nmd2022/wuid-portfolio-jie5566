@@ -1,0 +1,28 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.topnav {
+    overflow: hidden; 
+}
+.topnav a {
+
+    float: left;
+    color: #e2e4e7;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration:none;
+    font-size: 30px;
+}
+h1 {
+    font-size: 5em;
+    color: #e2e4e7;
+    text-align: center;
+    margin-top: 2em;
+}
+body {
+    background-image: url("sky.png");
+    background-position:top ;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
