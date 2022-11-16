@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(104, 116, 128);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 4em;
+  padding: 5%;
+  color: aliceblue;
+  text-align: center;
+}
+h3 {
+  margin: 0;
+  padding: 5%;
+  font-size: 1em;
+  color: aliceblue;
+  text-align: center;
+}
+p {
+  margin: 0;
+  padding: 5%;
+  font-size: 1em;
+  color: aliceblue;
+  text-align: center;
+}
+
+.sketching-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1%;
+  /* grid-template-columns: repeat(auto, minmax(20rem, 1fr)); */
+}
+.sketching-grid img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+.watercolorbrandinggrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+}
+.watercolorbrandinggrid img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .sketching-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .sketching-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .watercolorbrandinggrid {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 3em;
+  }
+}
+footer {
+  text-align: center;
+}
+@media screen and (max-width: 375px) {
+  .sketching-grid {
+    grid-template-columns: 1fr;
+  }
+  .watercolorbrandinggrid {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
