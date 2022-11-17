@@ -15,16 +15,55 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 h1 {
+  margin-top: 2em;
   font-size: 5em;
   color: #e2e4e7;
   text-align: center;
 }
+p {
+  font-size: 1.2em;
+  color: #e2e4e7;
+  text-align: center;
+}
+
 body {
   background-image: url("sky.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.animation1:hover {
+  animation-name: growbig;
+  animation-duration: 1s;
+}
+@keyframes growbig {
+  from {
+    font-size: 5em;
+  }
+  to {
+    font-size: 6em;
+  }
+}
+/* the animation2 is from css-tricks */
+.animation2 {
+  overflow: hidden;
+  border-right: 0.15em solid rgb(222, 151, 58);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.2em;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: typing 8s steps(50, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 425px) {
   h1 {
     font-size: 4em;
